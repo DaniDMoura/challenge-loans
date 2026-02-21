@@ -92,7 +92,7 @@ Avalia um cliente e retorna os empréstimos disponíveis.
 ## Validações
 
 ### CustomerRequestDto
-- **age**: Obrigatório (`@NotNull`) e deve ser maior ou igual a 0 (`@Min(0)`).
+- **age**: Obrigatório (`@NotNull`) e deve ser maior ou igual a 18 (`@Min(18)`).
 - **cpf**: Obrigatório (`@NotBlank`) e deve seguir o formato válido de CPF (`@Pattern("\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}")`).
 - **name**: Obrigatório (`@NotBlank`).
 - **income**: Obrigatório (`@NotNull`) e deve ser maior ou igual a 0.01 (`@DecimalMin("0.01")`).
